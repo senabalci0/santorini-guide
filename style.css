@@ -1,0 +1,361 @@
+:root {
+  --blue-deep:  #0a2342;
+  --blue-mid:   #1a4a7a;
+  --blue-sky:   #4a9fd4;
+  --white-warm: #faf8f5;
+  --accent:     #e8c97e;
+  --text-muted: #6b8cae;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--white-warm);
+  color: var(--blue-deep);
+}
+
+.navbar {
+  background: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.85) !important;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover { color: var(--accent) !important; }
+
+.hero {
+  position: relative;
+  min-height: 92vh;
+  background-image: url('https://www.hostelworld.com/blog/wp-content/uploads/santorini-view.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10,35,66,0.55) 0%,
+    rgba(10,35,66,0.25) 50%,
+    rgba(10,35,66,0.70) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.hero-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.8);
+  max-width: 480px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+.hero-scroll {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hero-scroll::after {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.4);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(1.2); }
+}
+
+#about {
+  padding: 100px 0;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blue-sky);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#about h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--blue-deep);
+}
+
+#about p {
+  color: #4a5f74;
+  line-height: 1.9;
+  font-size: 0.97rem;
+  margin-bottom: 24px;
+}
+
+.about-facts {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-facts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: #4a5f74;
+}
+
+.about-facts li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+.about-image-block {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  box-shadow: 0 30px 80px rgba(10,35,66,0.18);
+}
+
+.about-image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-image-block .img-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: white;
+  border-radius: 12px;
+  padding: 14px 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.img-badge .badge-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blue-deep);
+  line-height: 1;
+}
+
+.img-badge .badge-text {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#attractions {
+  padding: 80px 0;
+  background: var(--blue-deep);
+}
+
+#attractions .section-label { color: var(--accent); }
+
+#attractions h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 48px;
+}
+
+.attraction-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--blue-mid);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.attraction-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+}
+
+.attraction-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.attraction-card:hover img { transform: scale(1.05); }
+
+.attraction-body {
+  padding: 22px 24px 26px;
+}
+
+.attraction-body h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.attraction-body p {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+
+.todo-section {
+  padding: 100px 0;
+  background: var(--white-warm);
+}
+
+.todo-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--blue-deep);
+  margin-bottom: 48px;
+}
+
+.day-card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px;
+  height: 100%;
+  border: 1px solid rgba(10,35,66,0.08);
+  box-shadow: 0 4px 30px rgba(10,35,66,0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.day-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue-sky), var(--accent));
+}
+
+.day-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(10,35,66,0.06);
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  right: 28px;
+}
+
+.day-card h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--blue-deep);
+  margin-bottom: 20px;
+}
+
+.day-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.day-card ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: #4a5f74;
+  line-height: 1.5;
+}
+
+.day-card ul li::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue-sky), var(--blue-mid));
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+footer {
+  background: var(--blue-deep);
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  padding: 32px;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+}
+
+footer span { color: var(--accent); }
