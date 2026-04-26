@@ -1,75 +1,66 @@
-# 🌍 Travel Guide Web App
+# 🌍 Santorini Travel Guide Web App
 
-A modern and responsive travel guide web application where users can explore famous cities, view attractions, and get real-time weather information.
+A modern, responsive travel guide website built with **HTML, CSS, and JavaScript**.
+Users can explore Santorini’s top attractions and read a visually rich travel experience page.
 
 ---
 
 ## 🚀 Live Demo
 
-👉 **[Click to explore the app](https://your-live-link.com)**
+👉 https://senabalci0.github.io/santorini-guide/
 
 ---
 
 ## ✨ Features
 
-* 🔍 Search cities dynamically
-* ❤️ Add/remove favorites (LocalStorage)
-* 🌤️ Real-time weather data (API integration)
-* 🌙 Dark mode support
-* 📱 Fully responsive design
-* 🎨 Modern UI with smooth animations
+* 🎨 Modern premium UI design
+* 📱 Fully responsive layout (mobile + desktop)
+* 🧭 Smooth navigation scroll
+* 🏝️ Detailed travel sections (About, Attractions, Itinerary)
+* ⚡ Fast static frontend (no backend required)
 
 ---
 
-## 🧠 Technologies Used
+## 🧠 Built With
 
 * HTML5
 * CSS3
-* Bootstrap 5
 * JavaScript (Vanilla)
-* Weather API
+* Bootstrap 5
 
 ---
 
 ## 📂 Project Structure
 
 ```
-travel-guide/
+santorini-guide/
 │── index.html
 │── css/
 │   └── style.css
 │── js/
 │   └── app.js
-│── assets/
-    └── images/
+│── README.md
 ```
 
 ---
 
-## ⚙️ Setup
+## ⚙️ How to Run
 
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/travel-guide.git
+git clone https://github.com/your-username/santorini-guide.git
 ```
 
 2. Open `index.html` in your browser
 
-3. Add your API key in `app.js`:
-
-```
-const apiKey = "YOUR_API_KEY";
-```
-
 ---
 
-## 🌍 Future Improvements
+## 📌 Notes
 
-* Multi-page city detail views
-* Map integration
-* User authentication
-* Backend integration
+* No backend required
+* No assets folder used (images are loaded from external URLs)
+* Designed for portfolio purposes
 
 ---
 
