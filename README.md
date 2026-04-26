@@ -7,7 +7,7 @@ Users can explore Santorini’s top attractions and read a visually rich travel 
 
 ## 🚀 Live Demo
 
-👉 https://senabalci0.github.io/santorini-guide/
+https://senabalci0.github.io/santorini-guide/
 
 ---
 
@@ -25,7 +25,7 @@ Users can explore Santorini’s top attractions and read a visually rich travel 
 
 * HTML5
 * CSS3
-* JavaScript (Vanilla)
+* JavaScript 
 * Bootstrap 5
 
 ---
@@ -54,16 +54,3 @@ git clone https://github.com/your-username/santorini-guide.git
 
 2. Open `index.html` in your browser
 
----
-
-## 📌 Notes
-
-* No backend required
-* No assets folder used (images are loaded from external URLs)
-* Designed for portfolio purposes
-
----
-
-## 👩‍💻 Author
-
-Created by **Sena Balcı**
